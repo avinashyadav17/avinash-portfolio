@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO -->
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" class="profile-pic" alt="Avinash">
+
+        <h1>Avinash</h1>
+        <p>Computer Engineering Student at Pulchowk Campus | Passionate Learner</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Computer Engineering student passionate about learning software development,
+        problem solving, and building practical applications using Python and modern web technologies.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skill">
+        <span>Python</span>
+        <div class="bar">
+            <div class="fill" style="width:90%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>C / C++</span>
+        <div class="bar">
+            <div class="fill" style="width:80%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>Flask</span>
+        <div class="bar">
+            <div class="fill" style="width:85%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>HTML, CSS, JavaScript</span>
+        <div class="bar">
+            <div class="fill" style="width:75%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>SQL / Databases</span>
+        <div class="bar">
+            <div class="fill" style="width:70%"></div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Taxi Booking System</h3>
+            <p>Python-based application using OOP concepts and Tkinter.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio built using Flask and responsive CSS.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Hospital Patient App</h3>
+            <p>Concept application for managing patient records and payments.</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
