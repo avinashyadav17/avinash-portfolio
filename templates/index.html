@@ -4,12 +4,38 @@
 <!-- HERO -->
 <section id="hero" class="hero">
     <div class="hero-content">
-        <img src="{{ url_for('static', filename='images/profile.jpg') }}" class="profile-pic" alt="Avinash">
 
-        <h1>Avinash</h1>
-        <p>Computer Engineering Student at Pulchowk Campus | Passionate Learner</p>
+        <div class="profile-wrapper">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" class="profile-pic" alt="Avinash">
+            <div class="profile-glow"></div>
+        </div>
+
+        <h1 class="hero-name">Avinash</h1>
+
+        <p class="hero-role">
+            Computer Engineering Student | Passionate Learner
+        </p>
+
+        <p class="hero-tagline">
+            Building practical solutions with code & creativity
+        </p>
+
+        <div class="hero-highlights">
+            <span>Python & Flask</span>
+            <span>Web Development</span>
+            <span>Problem Solving</span>
+
+        </div>
+
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#connect" class="btn secondary">Let’s Connect</a>
+        </div>
+
     </div>
 </section>
+
 
 <!-- ABOUT -->
 <section id="about" class="about">

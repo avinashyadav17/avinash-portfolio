@@ -9,6 +9,9 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
@@ -32,31 +35,29 @@
     {% block content %}{% endblock %}
 
     <footer class="footer">
-
         <div class="footer-socials">
-            <a href="https://github.com/avinashyadav17" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
+            <a href="https://github.com/avinashyadav17" target="_blank">
+                <img src="{{ url_for('static', filename='images/icons/github.png') }}" alt="GitHub">
             </a>
 
-            <a href="https://linkedin.com/in/avinashyadav" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
+            <a href="https://www.linkedin.com/in/avinash-yadav-517805368/" target="_blank">
+                <img src="{{ url_for('static', filename='images/icons/linkedin.png') }}" alt="LinkedIn">
             </a>
 
-            <a href="mailto:royalavinash362@gmail.com" aria-label="Email">
-                <i class="fas fa-envelope"></i>
+            <a href="mailto:royalavinash362@gmail.com">
+                <img src="{{ url_for('static', filename='images/icons/gmail.png') }}" alt="Email">
             </a>
 
-            <a href="https://www.facebook.com/avi.nash.100766" target="_blank" aria-label="Facebook">
-                <i class="fab fa-facebook-f"></i>
+            <a href="https://www.facebook.com/avi.nash.100766" target="_blank">
+                <img src="{{ url_for('static', filename='images/icons/facebook.png') }}" alt="Facebook">
             </a>
 
-            <a href="https://instagram.com/abhi.o18" target="_blank" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
+            <a href="https://instagram.com/abhi.o18" target="_blank">
+                <img src="{{ url_for('static', filename='images/icons/instagram.png') }}" alt="Instagram">
             </a>
         </div>
 
         <p>© 2025 Avinash | Built with Python & Flask</p>
-
     </footer>
 
 </body>
